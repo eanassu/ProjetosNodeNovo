@@ -1,0 +1,1 @@
+exports.inicio=(req,res)=>res.render('funcionarios/index');
