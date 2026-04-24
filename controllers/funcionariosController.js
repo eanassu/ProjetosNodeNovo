@@ -18,3 +18,10 @@ exports.new=(req,res) => {
         res.redirect('/funcionarios');
     });
 }
+
+exports.lista=(req,res)=>{
+    Funcionario.getAll((err,results) => {
+        if(err) return res.status(500).send('erro no select');
+        res.render('funcionarios/lista',{funcionarios: results});
+    });
+};

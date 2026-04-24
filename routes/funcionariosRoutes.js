@@ -6,5 +6,6 @@ const funcionariosController=
 router.get('/', funcionariosController.inicio);
 router.get('/cadastro', funcionariosController.cadastro);
 router.post('/new',funcionariosController.new);
+router.get('/lista',funcionariosController.lista);
 module.exports = router;
 
